@@ -1,21 +1,9 @@
 <script setup>
-const { data: countries } = await useFetch("/api/all");
 </script>
 
 <template>
   <div class="holder">
-    <NuxtLink
-      :to="`/countries/${country.name.common}`"
-      v-for="country in countries"
-      :key="country.name.common"
-    >
-      <div class="inner">
-        <img :src="country.flags.svg" alt="" />
-        <h3>
-          {{ country.name.common }}
-        </h3>
-      </div>
-    </NuxtLink>
+   Hi
   </div>
 </template>
 
